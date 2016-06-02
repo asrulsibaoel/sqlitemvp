@@ -1,5 +1,6 @@
 package com.penguin.padang.pasir.sqlitesharedpreferences.views.imp;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements MainActivityInter
     private SharedPreferences sharedPreferences;
     Button submit;
     Button viewRegistered;
+    Button viewList;
     EditText name;
     EditText address;
 
@@ -54,6 +56,8 @@ public class MainActivity extends AppCompatActivity implements MainActivityInter
         address = (EditText) findViewById(R.id.address);
         submit = (Button) findViewById(R.id.submit_registration);
         viewRegistered = (Button) findViewById(R.id.view_registered);
+        viewList = (Button) findViewById(R.id.list_person);
+
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,6 +70,14 @@ public class MainActivity extends AppCompatActivity implements MainActivityInter
             @Override
             public void onClick(View v) {
                 personPresenter.viewAllRegisteredAction();
+            }
+        });
+
+        viewList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ListViewAcivity.class);
+                startActivity(intent);
             }
         });
 
