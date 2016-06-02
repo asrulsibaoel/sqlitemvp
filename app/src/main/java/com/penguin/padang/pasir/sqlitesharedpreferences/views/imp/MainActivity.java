@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity implements MainActivityInter
     private PersonPresenterInterface personPresenter;
     private SharedPreferences sharedPreferences;
     Button submit;
-    Button viewRegistered;
     Button viewList;
     EditText name;
     EditText address;
@@ -55,7 +54,6 @@ public class MainActivity extends AppCompatActivity implements MainActivityInter
         name = (EditText) findViewById(R.id.name);
         address = (EditText) findViewById(R.id.address);
         submit = (Button) findViewById(R.id.submit_registration);
-        viewRegistered = (Button) findViewById(R.id.view_registered);
         viewList = (Button) findViewById(R.id.list_person);
 
 
@@ -63,13 +61,6 @@ public class MainActivity extends AppCompatActivity implements MainActivityInter
             @Override
             public void onClick(View v) {
                 personPresenter.addPersonAction(name.getText().toString(), address.getText().toString());
-            }
-        });
-
-        viewRegistered.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                personPresenter.viewAllRegisteredAction();
             }
         });
 
