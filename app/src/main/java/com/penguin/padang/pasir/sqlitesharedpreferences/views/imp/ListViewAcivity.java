@@ -7,6 +7,7 @@ import android.widget.Toast;
 
 import com.penguin.padang.pasir.sqlitesharedpreferences.R;
 import com.penguin.padang.pasir.sqlitesharedpreferences.infrastructure.PersonAdapter;
+import com.penguin.padang.pasir.sqlitesharedpreferences.models.Person;
 import com.penguin.padang.pasir.sqlitesharedpreferences.presenters.PersonListImp;
 import com.penguin.padang.pasir.sqlitesharedpreferences.presenters.PersonListInterface;
 import com.penguin.padang.pasir.sqlitesharedpreferences.views.interfaces.ListViewActivityInterface;
@@ -17,7 +18,7 @@ public class ListViewAcivity extends AppCompatActivity implements ListViewActivi
 
     private PersonListInterface personListInterface;
 
-    private ArrayList<String> listPerson = new ArrayList<>();
+    private ArrayList<Person> listPerson = new ArrayList<>();
     private String[] namePerson;
 
     private ListView listView;
@@ -54,7 +55,7 @@ public class ListViewAcivity extends AppCompatActivity implements ListViewActivi
     }
 
     @Override
-    public ArrayList<String> getListPerson() {
+    public ArrayList<Person> getListPerson() {
         return this.listPerson;
     }
 

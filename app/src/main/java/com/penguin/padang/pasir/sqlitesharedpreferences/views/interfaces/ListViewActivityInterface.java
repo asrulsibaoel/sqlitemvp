@@ -1,5 +1,7 @@
 package com.penguin.padang.pasir.sqlitesharedpreferences.views.interfaces;
 
+import com.penguin.padang.pasir.sqlitesharedpreferences.models.Person;
+
 import java.util.ArrayList;
 
 /**
@@ -11,7 +13,7 @@ public interface ListViewActivityInterface {
 
     String[] getNamePerson();
 
-    ArrayList<String> getListPerson();
+    ArrayList<Person> getListPerson();
 
     void setListPerson();
 }

@@ -3,6 +3,7 @@ package com.penguin.padang.pasir.sqlitesharedpreferences.presenters;
 import android.content.Context;
 import android.widget.ListView;
 
+import com.penguin.padang.pasir.sqlitesharedpreferences.R;
 import com.penguin.padang.pasir.sqlitesharedpreferences.infrastructure.DatabaseHelper;
 import com.penguin.padang.pasir.sqlitesharedpreferences.infrastructure.PersonAdapter;
 import com.penguin.padang.pasir.sqlitesharedpreferences.models.Person;
@@ -34,11 +35,11 @@ public class PersonListImp implements PersonListInterface{
             if(arrayList.size() > 0){
                 for (int i = 0; i < arrayList.size(); i++) {
                     Person person = arrayList.get(i);
-                    listViewActivityInterface.getListPerson().add(person.getName());
+                    listViewActivityInterface.getListPerson().add(person);
                 }
             }
 
-            personAdapter = new PersonAdapter((Context) listViewActivityInterface,android.R.layout.simple_list_item_1,listViewActivityInterface.getListPerson());
+            personAdapter = new PersonAdapter((Context) listViewActivityInterface, R.layout.view_item_layout, listViewActivityInterface.getListPerson());
 
             listView.setAdapter(personAdapter);
         } catch (Exception  e) {
