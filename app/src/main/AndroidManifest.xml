@@ -15,7 +15,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".views.imp.ListViewAcivity"></activity>
+        <activity android:name=".views.imp.ListViewAcivity" />
+        <activity
+            android:name=".RecyclerActivity"
+            android:label="@string/title_activity_recycler"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
