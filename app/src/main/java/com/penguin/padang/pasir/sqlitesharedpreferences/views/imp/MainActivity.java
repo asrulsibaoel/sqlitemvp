@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements MainActivityInter
     private SharedPreferences sharedPreferences;
     Button submit;
     Button viewList;
+    Button recyclerList;
     EditText name;
     EditText address;
 
@@ -55,6 +56,7 @@ public class MainActivity extends AppCompatActivity implements MainActivityInter
         address = (EditText) findViewById(R.id.address);
         submit = (Button) findViewById(R.id.submit_registration);
         viewList = (Button) findViewById(R.id.list_person);
+        recyclerList = (Button) findViewById(R.id.recyler_list);
 
 
         submit.setOnClickListener(new View.OnClickListener() {
@@ -68,6 +70,14 @@ public class MainActivity extends AppCompatActivity implements MainActivityInter
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ListViewAcivity.class);
+                startActivity(intent);
+            }
+        });
+
+        recyclerList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RecyclerActivity.class);
                 startActivity(intent);
             }
         });

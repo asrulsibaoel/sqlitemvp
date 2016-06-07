@@ -4,10 +4,9 @@ import android.content.Context;
 import android.widget.ListView;
 
 import com.penguin.padang.pasir.sqlitesharedpreferences.R;
-import com.penguin.padang.pasir.sqlitesharedpreferences.infrastructure.DatabaseHelper;
-import com.penguin.padang.pasir.sqlitesharedpreferences.infrastructure.PersonAdapter;
+import com.penguin.padang.pasir.sqlitesharedpreferences.infrastructure.helper.DatabaseHelper;
+import com.penguin.padang.pasir.sqlitesharedpreferences.infrastructure.adapter.PersonAdapter;
 import com.penguin.padang.pasir.sqlitesharedpreferences.models.Person;
-import com.penguin.padang.pasir.sqlitesharedpreferences.views.imp.ListViewAcivity;
 import com.penguin.padang.pasir.sqlitesharedpreferences.views.interfaces.ListViewActivityInterface;
 
 import java.util.ArrayList;

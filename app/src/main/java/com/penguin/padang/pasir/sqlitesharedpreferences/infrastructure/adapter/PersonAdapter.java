@@ -1,4 +1,4 @@
-package com.penguin.padang.pasir.sqlitesharedpreferences.infrastructure;
+package com.penguin.padang.pasir.sqlitesharedpreferences.infrastructure.adapter;
 
 import android.app.Activity;
 import android.content.Context;

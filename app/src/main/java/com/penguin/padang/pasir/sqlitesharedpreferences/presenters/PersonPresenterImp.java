@@ -1,9 +1,8 @@
 package com.penguin.padang.pasir.sqlitesharedpreferences.presenters;
 
 import android.content.Context;
-import android.widget.EditText;
 
-import com.penguin.padang.pasir.sqlitesharedpreferences.infrastructure.DatabaseHelper;
+import com.penguin.padang.pasir.sqlitesharedpreferences.infrastructure.helper.DatabaseHelper;
 import com.penguin.padang.pasir.sqlitesharedpreferences.models.Person;
 import com.penguin.padang.pasir.sqlitesharedpreferences.views.interfaces.MainActivityInterface;
 

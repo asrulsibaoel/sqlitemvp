@@ -6,7 +6,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.penguin.padang.pasir.sqlitesharedpreferences.R;
-import com.penguin.padang.pasir.sqlitesharedpreferences.infrastructure.PersonAdapter;
+import com.penguin.padang.pasir.sqlitesharedpreferences.infrastructure.adapter.PersonAdapter;
 import com.penguin.padang.pasir.sqlitesharedpreferences.models.Person;
 import com.penguin.padang.pasir.sqlitesharedpreferences.presenters.PersonListImp;
 import com.penguin.padang.pasir.sqlitesharedpreferences.presenters.PersonListInterface;

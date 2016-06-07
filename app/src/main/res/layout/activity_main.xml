@@ -45,4 +45,11 @@
         android:id="@+id/list_person"
         android:layout_centerHorizontal="true"
         android:text="List View"/>
+    <Button
+        android:id="@+id/recyler_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recycler View"
+        android:layout_below="@id/list_person"
+        android:layout_centerHorizontal="true"/>
 </RelativeLayout>
